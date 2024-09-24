@@ -36,6 +36,8 @@ public class Utils {
         worldRenderer.pos(pos1.xCoord, pos1.yCoord, pos1.zCoord).color(red, green, blue, alpha).endVertex();
         worldRenderer.pos(pos2.xCoord, pos2.yCoord, pos2.zCoord).color(red, green, blue, alpha).endVertex();
         tessellator.draw();
+        GlStateManager.enableLighting();
+        GlStateManager.enableTexture2D();
         GlStateManager.disableBlend();
         GlStateManager.popMatrix();
     }
