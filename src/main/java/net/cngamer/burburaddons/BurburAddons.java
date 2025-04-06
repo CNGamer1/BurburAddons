@@ -15,5 +15,6 @@ public class BurburAddons
     public void init(FMLInitializationEvent event)
     {
         MinecraftForge.EVENT_BUS.register(new BlockDetectingHandler());
+        MinecraftForge.EVENT_BUS.register(new WishHandler());
     }
 }
