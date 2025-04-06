@@ -13,7 +13,6 @@ public class WishHandler {
         if (message.contains("Maxor is enraged!")) {
             EntityPlayer player = Minecraft.getMinecraft().thePlayer;
             player.dropOneItem(false);
-            System.out.println("Working");
         }
     }
 }
